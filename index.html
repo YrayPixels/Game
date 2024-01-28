@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Game</title>
+  </head>
+
+  <style>
+    body {
+      background-color: black;
+    }
+    canvas {
+      position: absolute;
+      border: 1px solid white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #player,
+    #enemy,
+    #background {
+      display: none;
+    }
+  </style>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <img src="/car2.png" id="player" alt="" />
+    <img src="/enemy.png" id="enemy" alt="" />
+    <img src="/roads.jpg" id="background" alt="" />
+
+    <script src="/gameScript.js"></script>
+  </body>
+</html>
